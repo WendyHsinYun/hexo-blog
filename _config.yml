@@ -64,6 +64,6 @@ ignore: null
 theme: icarus
 deploy:
   type: git
-  repo: https://github.com/WendyHsinYun/hy-blog.git
+  repo: https://github.com/WendyHsinYun/hexo-blog.git
   branch: main
   message: ''

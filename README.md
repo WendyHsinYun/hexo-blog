@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed:
 
 3. **Clone the repository:**
    ```bash
-   git clone https://github.com/WendyHsinYun/hy-blog
+   git clone https://github.com/WendyHsinYun/hexo-blog
    cd hy-blog
    ```
 
@@ -116,7 +116,7 @@ For more information: [Generating](https://hexo.io/docs/generating.html)
    ```yml
    deploy:
      type: git
-     repo: https://github.com/WendyHsinYun/hy-blog.git
+     repo: https://github.com/WendyHsinYun/hexo-blog.git
      branch: gh-pages
    ```
 
