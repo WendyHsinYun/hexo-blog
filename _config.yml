@@ -65,5 +65,6 @@ theme: icarus
 deploy:
   type: git
   repo: https://github.com/WendyHsinYun/hexo-blog.git
-  branch: main
+  # branch: main
+  branch: gh-pages
   message: ''
