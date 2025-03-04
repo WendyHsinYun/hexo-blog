@@ -47,9 +47,16 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-5. **Install Icarus theme dependencies:**
+## Install Icarus Theme
+
+1. **Clone the Icarus theme:**
    ```bash
-   npm install --save hexo-theme-icarus
+   git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus --depth 1
+   ```
+
+2. **Set Icarus as the theme:**
+   ```bash
+   hexo config theme icarus
    ```
 
 ## Configuration
