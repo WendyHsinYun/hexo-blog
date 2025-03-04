@@ -3,52 +3,118 @@
 ## Description
 This is a personal note website built with Hexo, using the [Icarus theme](https://ppoffice.github.io/hexo-theme-icarus/).
 
-📌 Visit my blog: [wendyhsinyun.github.io/hy-blog](https://wendyhsinyun.github.io/hy-blog/)
+📌 Visit [my blog](https://www.hychang.me)
 
+## Prerequisites
 
-## Theme
+Before you begin, ensure you have the following installed:
 
-This site uses the [Icarus theme](https://ppoffice.github.io/hexo-theme-icarus/).
+1. **Node.js and npm**
+   - Hexo requires Node.js version 14 or higher.
+   - [Download Node.js](https://nodejs.org/) and verify the installation:
+     ```bash
+     node -v  # Check Node.js version
+     npm -v   # Check npm version
+     ```
 
-For theme documentation, visit: [Icarus Theme Documentation](https://ppoffice.github.io/hexo-theme-icarus/)
+2. **Git**
+   - Used for version control and deployment.
+   - [Download Git](https://git-scm.com/downloads) and verify the installation:
+     ```bash
+     git --version
+     ```
 
-### Clone the Repository
+## Installation
 
-```sh
-git clone <https://github.com/WendyHsinYun/hy-blog>
-```
+1. **Install Hexo CLI globally:**
+   ```bash
+   npm install -g hexo-cli
+   ```
+
+2. **Verify Hexo installation:**
+   ```bash
+   hexo -v
+   ```
+
+3. **Clone the repository:**
+   ```bash
+   git clone https://github.com/WendyHsinYun/hy-blog
+   cd hy-blog
+   ```
+
+4. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+5. **Install Icarus theme dependencies:**
+   ```bash
+   npm install --save hexo-theme-icarus
+   ```
+
+## Configuration
+
+1. **Update `_config.yml` file**  
+   Modify `title`, `description`, `url`, etc., based on your needs.
+
+2. **Configure Icarus theme (`themes/icarus/_config.yml`)**  
+   Customize theme colors, navigation, plugins, and more.
 
 ## Quick Start
 
-### Create a new post
+### Create a New Post
 
-``` bash
-$ hexo new "My New Post"
+```bash
+hexo new "My New Post"
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+For more information: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+### Run Local Server
 
-``` bash
-$ hexo server
+```bash
+hexo server
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
+By default, it runs at [http://localhost:4000](http://localhost:4000).  
+For more information: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+### Generate Static Files
 
-``` bash
-$ hexo generate
+```bash
+hexo generate
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+For more information: [Generating](https://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
+### Deploy to GitHub Pages
 
-``` bash
-$ hexo deploy
-```
+1. Ensure the `deploy` section in `_config.yml` is correctly set:
+   ```yml
+   deploy:
+     type: git
+     repo: https://github.com/WendyHsinYun/hy-blog.git
+     branch: gh-pages
+   ```
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
-# hexo-blog
+2. Run the deploy command:
+   ```bash
+   hexo deploy
+   ```
+
+For more information: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+## Common Commands Summary
+
+| Command                            | Description                          |
+|------------------------------------|--------------------------------------|
+| `hexo new "My New Post"`           | Create a new post                    |
+| `hexo clean`                       | Clear cache                          |
+| `hexo generate`                    | Generate static files                |
+| `hexo server`                      | Run local server                     |
+| `hexo deploy`                      | Deploy to remote site                |
+
+## Useful Links
+
+- [Hexo Documentation](https://hexo.io/docs/)
+- [Icarus Theme Documentation](https://ppoffice.github.io/hexo-theme-icarus/)
