@@ -49,6 +49,8 @@ Before you begin, ensure you have the following installed:
 
 ## Install Icarus Theme
 
+### Method 1: Clone the Theme
+
 1. **Clone the Icarus theme:**
    ```bash
    git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus --depth 1
@@ -58,6 +60,20 @@ Before you begin, ensure you have the following installed:
    ```bash
    hexo config theme icarus
    ```
+
+### Method 2: Add as Git Submodule
+
+1. **Add Icarus theme as a Git submodule:**
+   ```bash
+   git submodule add https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus
+   ```
+
+2. **Set Icarus as the theme:**
+   ```bash
+   hexo config theme icarus
+   ```
+
+> **Note:** Using Git submodules makes it easier to update the theme in the future. Run `git submodule update --remote` to pull the latest changes.
 
 ## Configuration
 
@@ -113,13 +129,14 @@ For more information: [Deployment](https://hexo.io/docs/one-command-deployment.h
 
 ## Common Commands Summary
 
-| Command                            | Description                          |
-|------------------------------------|--------------------------------------|
-| `hexo new "My New Post"`           | Create a new post                    |
-| `hexo clean`                       | Clear cache                          |
-| `hexo generate`                    | Generate static files                |
-| `hexo server`                      | Run local server                     |
-| `hexo deploy`                      | Deploy to remote site                |
+| Command                                                      | Description                                 |
+|--------------------------------------------------------------|---------------------------------------------|
+| `hexo new "My New Post"`                                      | Create a new post                          |
+| `hexo clean`                                                 | Clear cache                                |
+| `hexo generate`                                              | Generate static files                      |
+| `hexo server`                                                | Run local server                           |
+| `hexo deploy`                                                | Deploy to remote site                      |
+| `git submodule update --remote`                               | Update theme if added as submodule         |
 
 ## Useful Links
 
