@@ -68,3 +68,18 @@ deploy:
   # branch: main
   branch: gh-pages
   message: ''
+
+comment:
+    type: giscus
+    repo: WendyHsinYun/hy-blog          # Required
+    repoId: R_kgDONwJxUA                # Required
+    category: Announcements             # Optional, default: Announcements
+    categoryId: DIC_kwDONwJxUM4CmrHr    # Required
+    mapping: pathname                   # Optional, default: pathname
+    strict: false                       # Optional
+    reactionsEnabled: true              # Optional
+    emitMetadata: false                 # Optional
+    inputPosition: top                  # Optional, default: top
+    theme: light                        # Optional
+    lang: zh-TW                         # Optional, default: en
+    lazy: true                          # Optional, default: false
