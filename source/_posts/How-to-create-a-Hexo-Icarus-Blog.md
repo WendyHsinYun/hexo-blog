@@ -1,7 +1,10 @@
 ---
 title: Hexo Icarus 架站紀錄
 date: 2025-03-01 20:16:35
-tags: #Hexo #Icarus #Blog
+tags:
+  - Hexo
+  - Blog
+  - Icarus
 ---
 
 ## 前言
@@ -49,7 +52,7 @@ npm install
 
 用 `hexo server` 或 `hexo s` 並到 [http://localhost:4000](http://localhost:4000) 檢查，當看到預設的網站配置，代表安裝完成。
 
-![圖片](https://hackmd.io/_uploads/Sy-2JTfFkg.png)
+![圖片](./img/How-to-create-a-Hexo-Icarus-Blog-1.png)
 
 ---
 
@@ -72,7 +75,7 @@ Icarus 官方 Blog ["Getting Started with Icarus"](https://ppoffice.github.io/he
 
 官方部落格有介紹兩種方法，選一種使用就好了。
 
-**:one: 方法一：獨立的 repo （我是選這個）**
+**方法一：獨立的 repo （我是選這個）**
 
 ```bash
 git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus --depth 1
@@ -85,7 +88,7 @@ git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus --dept
 
 ---
 
-**:two: 方法二：加入為 submodule**
+**方法二：加入為 submodule**
 
 ```bash
 git submodule add https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus
